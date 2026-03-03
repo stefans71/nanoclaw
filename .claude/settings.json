@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force*)",
+      "Bash(npm publish*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/store/auth/**)",
+      "Read(**/secrets*)",
+      "Read(**/credentials*)",
+      "Bash(sqlite3 * DROP*)",
+      "Bash(sqlite3 * delete from*)",
+      "Bash(docker rm -f*)",
+      "Bash(systemctl stop nanoclaw*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": []
+  }
+}
